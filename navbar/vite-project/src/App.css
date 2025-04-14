@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.bgimage {
+    background-image: url(../../vite-project/public/Bg.webp);
+}
