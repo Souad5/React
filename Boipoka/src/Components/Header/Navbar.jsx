@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router";
+import About from './../../Pages/About/About';
 
 const Navbar = () => {
   const links = (
     <>
-      <button className="mr-5 btn">Home</button>
-      <button className="ml-5 btn">About</button>
+      <Link to={'/'}><button className="ml-5 btn">Home</button></Link>
+      <Link to={'/about'}><button className="ml-5 btn">About</button></Link>
+      <Link to={'/books'}><button className="ml-5 btn">Listed Books</button></Link>
+      <Link to={'/pages'}><button className="ml-5 btn">Pages to read</button></Link>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
